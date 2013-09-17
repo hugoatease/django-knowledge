@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-17 18:06+0200\n"
-"PO-Revision-Date: 2013-09-17 18:21+0100\n"
+"PO-Revision-Date: 2013-09-17 18:31+0100\n"
 "Last-Translator: Hugo Caille <hugo.caille@orange.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -228,6 +228,11 @@ msgid ""
 "%(url \")s\"\">%(domain)s%(url \")s</a\">.\n"
 "        "
 msgstr ""
+"\n"
+"        Nous voulions vous prévenir qu'une nouvelle réponse a été ajoutée "
+"pour la question \"%(title)s\". Vous pouvez aller la consulter ici: <a href="
+"\"%(domain)s%(url \")s\"\">%(domain)s%(url \")s</a\">.\n"
+"        "
 
 #: templates/django_knowledge/emails/message.html:18
 #: templates/django_knowledge/emails/message.txt:13
@@ -235,6 +240,8 @@ msgid ""
 "You are receiving these messages because you checked the 'alert' box when "
 "you originally posted."
 msgstr ""
+"Vous recevez ces messages parce que vous avez coché la case \"alerte\" au "
+"moment de votre post."
 
 #: templates/django_knowledge/emails/message.html:22
 #, python-format
@@ -245,11 +252,16 @@ msgid ""
 "%(domain)s%(url \")s</a\">\n"
 "        "
 msgstr ""
+"\n"
+"        Nous voulions vous prévenir qu'une nouvelle question a été ajoutée: "
+"\"%(title)s\". Vous pouvez aller la consulter ici: <a href=\"%(domain)s"
+"%(url \")s\"\">%(domain)s%(url \")s</a\">\n"
+"        "
 
 #: templates/django_knowledge/emails/message.html:30
 #: templates/django_knowledge/emails/message.txt:23
 msgid "You are receiving these messages because you are a staff member."
-msgstr ""
+msgstr "Vous recevez ces messages parce que vous êtes un membre de l'équipe."
 
 #: templates/django_knowledge/emails/message.html:33
 #, python-format
@@ -257,6 +269,8 @@ msgid ""
 "Thank you,\n"
 "    %(name)s team"
 msgstr ""
+"Merci,\n"
+"    L'équipe %(name)s"
 
 #: templates/django_knowledge/emails/message.txt:7
 #, python-format
@@ -266,6 +280,11 @@ msgid ""
 "question \"%(title)s\". You can visit it here: %(domain)s%(url \")s\"\n"
 "    "
 msgstr ""
+"\n"
+"    Nous voulions vous prévenir qu'une nouvelle réponse a été ajoutée pour "
+"la question \"%(title)s\". Vous pouvez aller la consulter ici: %(domain)s"
+"%(url \")s\"\n"
+"    "
 
 #: templates/django_knowledge/emails/message.txt:17
 #, python-format
@@ -275,6 +294,10 @@ msgid ""
 "\"%(title)s\". You can visit it here: %(domain)s%(url \")s\"\n"
 "    "
 msgstr ""
+"\n"
+"    Nous voulions vous prévenir qu'une nouvelle question a été ajoutée: "
+"\"%(title)s\". Vous pouvez aller la consulter ici: %(domain)s%(url \")s\"\n"
+"    "
 
 #: templates/django_knowledge/emails/message.txt:26
 #, python-format
@@ -282,13 +305,15 @@ msgid ""
 "Thank you,\n"
 "%(name)s team"
 msgstr ""
+"Merci,\n"
+"L'équipe %(name)s"
 
 #: templates/django_knowledge/emails/subject.txt:1
 #, python-format
 msgid "New response on \"%(title)s\" on %(name)s."
-msgstr ""
+msgstr "Nouvelle réponse pour \"%(title)s\" sur %(name)s."
 
 #: templates/django_knowledge/emails/subject.txt:1
 #, python-format
 msgid "New question \"%(title)s\" on %(name)s."
-msgstr ""
+msgstr "Nouvelle question \"%(title)s\" sur %(name)s."
