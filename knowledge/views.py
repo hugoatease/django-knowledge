@@ -46,10 +46,20 @@ def knowledge_index(request,
                                 .prefetch_related('responses__question')[0:20]
     # this is for get_responses()
     [setattr(q, '_requesting_user', request.user) for q in questions]
+    
+    topics = Question.objects.can_view(request.user)\
+                    .prefetch_related('responses__question').filter(topic=True)\
+                    .order_by('title')[0:20]
+    
+    has_topics = False
+    if len(topics) > 0:
+        has_topics = True
 
     return render(request, template, {
         'request': request,
         'questions': questions,
+        'has_topics' : has_topics,
+        'topics' : topics,
         'my_questions': get_my_questions(request),
         'categories': Category.objects.all()
     })

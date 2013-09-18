@@ -160,6 +160,8 @@ class Question(KnowledgeBase):
         default='private', db_index=True)
 
     locked = models.BooleanField(default=False)
+    
+    topic = models.BooleanField(default=False)
 
     categories = models.ManyToManyField('knowledge.Category', blank=True)
 
