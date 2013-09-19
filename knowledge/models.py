@@ -195,6 +195,12 @@ class Question(KnowledgeBase):
         if save:
             self.save()
     lock.alters_data = True
+    
+    def set_topic(self, save=True):
+        self.topic = not self.topic
+        if save:
+            self.save()
+    set_topic.alters_data = True
 
     ###################
     #### RESPONSES ####
@@ -243,7 +249,7 @@ class Question(KnowledgeBase):
         """
         Handy for checking for mod bar button state.
         """
-        return [self.status, 'lock' if self.locked else None]
+        return [self.status, 'lock' if self.locked else None, 'set_topic' if self.topic else None]
 
     @property
     def url(self):

@@ -14,6 +14,7 @@ ALLOWED_MODS = {
     'question': [
         'private', 'public',
         'delete', 'lock',
+        'set_topic',
         'clear_accepted'
     ],
     'response': [
