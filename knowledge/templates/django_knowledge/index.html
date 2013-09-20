@@ -7,7 +7,7 @@
 
 {% block knowledge_widgets %}
 
-{% if has_topics %}
+{% if not topics|length_is:0 %}
 <div class="dk-widget">
 	<h3>{% trans "Help Topics" %}</h3>
 	<hr />
