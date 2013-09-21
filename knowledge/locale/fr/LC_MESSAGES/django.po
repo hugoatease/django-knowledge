@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-17 18:06+0200\n"
-"PO-Revision-Date: 2013-09-17 18:31+0100\n"
+"POT-Creation-Date: 2013-09-21 13:34+0200\n"
+"PO-Revision-Date: 2013-09-21 13:35+0100\n"
 "Last-Translator: Hugo Caille <hugo.caille@orange.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -70,7 +70,7 @@ msgstr "Entrez une adresse email valide."
 msgid "Anonymous"
 msgstr "Anonyme"
 
-#: models.py:151 models.py:170
+#: models.py:151 models.py:172
 msgid "Question"
 msgstr "Question"
 
@@ -86,23 +86,23 @@ msgstr "Description"
 msgid "Please offer details. Markdown enabled."
 msgstr "Merci d'ajouter des détails. La syntaxe Markdown est activée."
 
-#: models.py:158 models.py:261
+#: models.py:158 models.py:269
 msgid "Status"
 msgstr "Statut"
 
-#: models.py:171
+#: models.py:173
 msgid "Questions"
 msgstr "Questions"
 
-#: models.py:258 models.py:270
+#: models.py:266 models.py:278
 msgid "Response"
 msgstr "Réponse"
 
-#: models.py:259
+#: models.py:267
 msgid "Please enter your response. Markdown enabled."
 msgstr "Merci d'entrer votre réponse. La syntaxe Markdown est activée."
 
-#: models.py:271
+#: models.py:279
 msgid "Responses"
 msgstr "Réponses"
 
@@ -124,7 +124,11 @@ msgstr "requis"
 msgid "Support"
 msgstr "Support"
 
-#: templates/django_knowledge/index.html:11
+#: templates/django_knowledge/index.html:12
+msgid "Help Topics"
+msgstr "Aide et tutoriels"
+
+#: templates/django_knowledge/index.html:20
 #, python-format
 msgid "Top %(count)s Questions"
 msgstr "Top %(count)s des questions"
@@ -151,16 +155,19 @@ msgid "next"
 msgstr "suivant"
 
 #: templates/django_knowledge/question_list.html:6
+#: templates/django_knowledge/topic_list.html:6
 msgid "no responses"
 msgstr "pas de réponses"
 
 #: templates/django_knowledge/question_list.html:6
+#: templates/django_knowledge/topic_list.html:6
 msgid "accepted"
 msgstr "accepté"
 
 #: templates/django_knowledge/question_list.html:6
 #: templates/django_knowledge/thread.html:20
 #: templates/django_knowledge/thread.html:45
+#: templates/django_knowledge/topic_list.html:6
 msgid "staff"
 msgstr "équipe"
 
