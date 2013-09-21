@@ -1,0 +1,319 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-17 18:06+0200\n"
+"PO-Revision-Date: 2013-09-17 18:31+0100\n"
+"Last-Translator: Hugo Caille <hugo.caille@orange.fr>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: forms.py:46 models.py:14
+msgid "Internal"
+msgstr "Interne"
+
+#: models.py:12
+msgid "Public"
+msgstr "Public"
+
+#: models.py:13
+msgid "Private"
+msgstr "Privé"
+
+#: models.py:19
+msgid "Inherit"
+msgstr "Hérité"
+
+#: models.py:35
+msgid "Category"
+msgstr "Catégorie"
+
+#: models.py:36 templates/django_knowledge/sidebar.html:19
+msgid "Categories"
+msgstr "Catégories"
+
+#: models.py:51
+msgid "Alert"
+msgstr "Alerte"
+
+#: models.py:52
+msgid "Check this if you want to be alerted when a new response is added."
+msgstr ""
+"Cochez si vous voulez recevoir une alerte quand une réponse aura été ajoutée."
+
+#: models.py:57
+msgid "Name"
+msgstr "Nom"
+
+#: models.py:58
+msgid "Enter your first and last name."
+msgstr "Entrez votre nom et votre prénom."
+
+#: models.py:60
+msgid "Email"
+msgstr "Email"
+
+#: models.py:61
+msgid "Enter a valid email address."
+msgstr "Entrez une adresse email valide."
+
+#: models.py:90
+msgid "Anonymous"
+msgstr "Anonyme"
+
+#: models.py:151 models.py:170
+msgid "Question"
+msgstr "Question"
+
+#: models.py:152
+msgid "Enter your question or suggestion."
+msgstr "Entre votre question ou suggestion."
+
+#: models.py:154
+msgid "Description"
+msgstr "Description"
+
+#: models.py:155
+msgid "Please offer details. Markdown enabled."
+msgstr "Merci d'ajouter des détails. La syntaxe Markdown est activée."
+
+#: models.py:158 models.py:261
+msgid "Status"
+msgstr "Statut"
+
+#: models.py:171
+msgid "Questions"
+msgstr "Questions"
+
+#: models.py:258 models.py:270
+msgid "Response"
+msgstr "Réponse"
+
+#: models.py:259
+msgid "Please enter your response. Markdown enabled."
+msgstr "Merci d'entrer votre réponse. La syntaxe Markdown est activée."
+
+#: models.py:271
+msgid "Responses"
+msgstr "Réponses"
+
+#: templates/django_knowledge/ask.html:6
+#: templates/django_knowledge/ask.html:10
+#: templates/django_knowledge/list.html:43
+msgid "Ask a Question"
+msgstr "Poser une Question"
+
+#: templates/django_knowledge/ask.html:16
+msgid "Please log in to ask a question."
+msgstr "Vous devez vous connecter pour pouvoir poser une question."
+
+#: templates/django_knowledge/form.html:10
+msgid "required"
+msgstr "requis"
+
+#: templates/django_knowledge/index.html:6
+msgid "Support"
+msgstr "Support"
+
+#: templates/django_knowledge/index.html:11
+#, python-format
+msgid "Top %(count)s Questions"
+msgstr "Top %(count)s des questions"
+
+#: templates/django_knowledge/inner.html:14
+msgid "Start typing your question here."
+msgstr "Commencez à entrer votre question ici."
+
+#: templates/django_knowledge/list.html:21
+msgid "No results found."
+msgstr "Pas de résultats trouvés."
+
+#: templates/django_knowledge/list.html:29
+msgid "previous"
+msgstr "précédent"
+
+#: templates/django_knowledge/list.html:32
+#, python-format
+msgid "page %(number)s of %(page)s"
+msgstr "page %(number)s sur %(page)s"
+
+#: templates/django_knowledge/list.html:35
+msgid "next"
+msgstr "suivant"
+
+#: templates/django_knowledge/question_list.html:6
+msgid "no responses"
+msgstr "pas de réponses"
+
+#: templates/django_knowledge/question_list.html:6
+msgid "accepted"
+msgstr "accepté"
+
+#: templates/django_knowledge/question_list.html:6
+#: templates/django_knowledge/thread.html:20
+#: templates/django_knowledge/thread.html:45
+msgid "staff"
+msgstr "équipe"
+
+#: templates/django_knowledge/sidebar.html:6
+msgid "My Questions"
+msgstr "Mes Questions"
+
+#: templates/django_knowledge/sidebar.html:30
+msgid "Navigate"
+msgstr "Naviguer"
+
+#: templates/django_knowledge/sidebar.html:34
+msgid "Ask a question or give suggestion."
+msgstr "Poser une question ou donner une suggestion."
+
+#: templates/django_knowledge/sidebar.html:35
+msgid "Return to homepage."
+msgstr "Revenir à la page principale."
+
+#: templates/django_knowledge/thread.html:21
+#: templates/django_knowledge/thread.html:46
+msgid "user"
+msgstr "utilisateur"
+
+#: templates/django_knowledge/thread.html:42
+msgid "accepted answer"
+msgstr "réponse acceptée"
+
+#: templates/django_knowledge/thread.html:43
+msgid "poster"
+msgstr "posteur"
+
+#: templates/django_knowledge/thread.html:57
+msgid "No responses yet."
+msgstr "Pas encore de réponses."
+
+#: templates/django_knowledge/thread.html:70
+msgid "This question has been closed."
+msgstr "Cette question a été fermée."
+
+#: templates/django_knowledge/thread.html:72
+msgid "Please log in to respond."
+msgstr "Vous devez vous connecter pour pouvoir répondre."
+
+#: templates/django_knowledge/welcome.html:5
+msgid "Welcome to our Support Center."
+msgstr "Bienvenue dans le Centre de Support."
+
+#: templates/django_knowledge/welcome.html:6
+msgid "Search for answers to your questions below, or ask your own."
+msgstr "Cherchez des réponses ci-dessous, ou posez votre question."
+
+#: templates/django_knowledge/emails/message.html:7
+#: templates/django_knowledge/emails/message.txt:4
+#, python-format
+msgid "Hello %(name)s,"
+msgstr "Bonjour %(name)s,"
+
+#: templates/django_knowledge/emails/message.html:10
+#, python-format
+msgid ""
+"\n"
+"        We just wanted to let you know that a new response has been added to "
+"the question \"%(title)s\". You can visit it here: <a href=\"%(domain)s"
+"%(url \")s\"\">%(domain)s%(url \")s</a\">.\n"
+"        "
+msgstr ""
+"\n"
+"        Nous voulions vous prévenir qu'une nouvelle réponse a été ajoutée "
+"pour la question \"%(title)s\". Vous pouvez aller la consulter ici: <a href="
+"\"%(domain)s%(url \")s\"\">%(domain)s%(url \")s</a\">.\n"
+"        "
+
+#: templates/django_knowledge/emails/message.html:18
+#: templates/django_knowledge/emails/message.txt:13
+msgid ""
+"You are receiving these messages because you checked the 'alert' box when "
+"you originally posted."
+msgstr ""
+"Vous recevez ces messages parce que vous avez coché la case \"alerte\" au "
+"moment de votre post."
+
+#: templates/django_knowledge/emails/message.html:22
+#, python-format
+msgid ""
+"\n"
+"        We just wanted to let you know that a new question has been added: "
+"\"%(title)s\". You can visit it here: <a href=\"%(domain)s%(url \")s\"\">"
+"%(domain)s%(url \")s</a\">\n"
+"        "
+msgstr ""
+"\n"
+"        Nous voulions vous prévenir qu'une nouvelle question a été ajoutée: "
+"\"%(title)s\". Vous pouvez aller la consulter ici: <a href=\"%(domain)s"
+"%(url \")s\"\">%(domain)s%(url \")s</a\">\n"
+"        "
+
+#: templates/django_knowledge/emails/message.html:30
+#: templates/django_knowledge/emails/message.txt:23
+msgid "You are receiving these messages because you are a staff member."
+msgstr "Vous recevez ces messages parce que vous êtes un membre de l'équipe."
+
+#: templates/django_knowledge/emails/message.html:33
+#, python-format
+msgid ""
+"Thank you,\n"
+"    %(name)s team"
+msgstr ""
+"Merci,\n"
+"    L'équipe %(name)s"
+
+#: templates/django_knowledge/emails/message.txt:7
+#, python-format
+msgid ""
+"\n"
+"    We just wanted to let you know that a new response has been added to the "
+"question \"%(title)s\". You can visit it here: %(domain)s%(url \")s\"\n"
+"    "
+msgstr ""
+"\n"
+"    Nous voulions vous prévenir qu'une nouvelle réponse a été ajoutée pour "
+"la question \"%(title)s\". Vous pouvez aller la consulter ici: %(domain)s"
+"%(url \")s\"\n"
+"    "
+
+#: templates/django_knowledge/emails/message.txt:17
+#, python-format
+msgid ""
+"\n"
+"    We just wanted to let you know that a new question has been added: "
+"\"%(title)s\". You can visit it here: %(domain)s%(url \")s\"\n"
+"    "
+msgstr ""
+"\n"
+"    Nous voulions vous prévenir qu'une nouvelle question a été ajoutée: "
+"\"%(title)s\". Vous pouvez aller la consulter ici: %(domain)s%(url \")s\"\n"
+"    "
+
+#: templates/django_knowledge/emails/message.txt:26
+#, python-format
+msgid ""
+"Thank you,\n"
+"%(name)s team"
+msgstr ""
+"Merci,\n"
+"L'équipe %(name)s"
+
+#: templates/django_knowledge/emails/subject.txt:1
+#, python-format
+msgid "New response on \"%(title)s\" on %(name)s."
+msgstr "Nouvelle réponse pour \"%(title)s\" sur %(name)s."
+
+#: templates/django_knowledge/emails/subject.txt:1
+#, python-format
+msgid "New question \"%(title)s\" on %(name)s."
+msgstr "Nouvelle question \"%(title)s\" sur %(name)s."
