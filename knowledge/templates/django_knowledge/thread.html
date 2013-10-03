@@ -23,7 +23,7 @@
         &nbsp;{{ question.added }}
       </span></h5>
 
-      {{ question.body|striptags|markdown }}
+      {% render_markup question.body|striptags %}
 
       {% include "django_knowledge/mod_bar.html" with allowed_mods=allowed_mods.question type="question" node=question %}
     </div>
@@ -48,7 +48,7 @@
           &nbsp;{{ response.added }}
         </span></h5>
 
-        {{ response.body|striptags|markdown }}
+        {% render_markup response.body|striptags %}
 
         {% include "django_knowledge/mod_bar.html" with allowed_mods=allowed_mods.response type="response" node=response %}
       </div>

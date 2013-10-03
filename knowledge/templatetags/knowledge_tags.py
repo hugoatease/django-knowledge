@@ -3,6 +3,13 @@ from urllib import urlencode
 
 from django import template
 
+from knowledge import settings
+
+if settings.DJANGO_KNOWLEDGE_MARKUP == 'Markdown':
+    import markdown
+elif settings.DJANGO_KNOWLEDGE_MARKUP == 'Textile':
+    import textile
+
 register = template.Library()
 
 
@@ -25,3 +32,16 @@ def page_query(request, page_num):
     qs = request.GET.copy()
     qs['page'] = page_num
     return qs.urlencode().replace('&', '&amp;')
+
+@register.simple_tag
+def render_markup(bodyblock):
+    """
+    Based on setting value, convert body text using
+    the correct renderer, else just return string
+    """
+    if settings.DJANGO_KNOWLEDGE_MARKUP == 'Markdown':
+        return markdown.markdown(bodyblock)
+    elif settings.DJANGO_KNOWLEDGE_MARKUP == 'Textile':
+        return textile.textile(bodyblock)
+    else:
+        return bodyblock
