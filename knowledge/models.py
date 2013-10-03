@@ -144,6 +144,13 @@ class KnowledgeBase(models.Model):
 
 
 class Question(KnowledgeBase):
+
+    QBODY_HELP_TEXT = 'Please offer details.'
+    if settings.DJANGO_KNOWLEDGE_MARKUP == 'Markdown':
+        QBODY_HELP_TEXT += ' Markdown enabled.'
+    elif settings.DJANGO_KNOWLEDGE_MARKUP == 'Textile':
+        QBODY_HELP_TEXT += ' Textile enabled.'
+
     is_question = True
     _requesting_user = None
 
@@ -152,7 +159,7 @@ class Question(KnowledgeBase):
         help_text=_('Enter your question or suggestion.'))
     body = models.TextField(blank=True, null=True,
         verbose_name=_('Description'),
-        help_text=_('Please offer details. Markdown enabled.'))
+        help_text=_(QBODY_HELP_TEXT))
 
     status = models.CharField(
         verbose_name=_('Status'),
@@ -249,6 +256,13 @@ class Question(KnowledgeBase):
 
 
 class Response(KnowledgeBase):
+
+    RBODY_HELP_TEXT = 'Please enter your response.'
+    if settings.DJANGO_KNOWLEDGE_MARKUP == 'Markdown':
+        RBODY_HELP_TEXT += ' Markdown enabled.'
+    elif settings.DJANGO_KNOWLEDGE_MARKUP == 'Textile':
+        RBODY_HELP_TEXT += ' Textile enabled.'
+
     is_response = True
 
     question = models.ForeignKey('knowledge.Question',
@@ -256,7 +270,7 @@ class Response(KnowledgeBase):
 
     body = models.TextField(blank=True, null=True,
         verbose_name=_('Response'),
-        help_text=_('Please enter your response. Markdown enabled.'))
+        help_text=_(RBODY_HELP_TEXT))
     status = models.CharField(
         verbose_name=_('Status'),
         max_length=32, choices=STATUSES_EXTENDED,
